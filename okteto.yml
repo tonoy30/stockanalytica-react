@@ -1,0 +1,10 @@
+name: stockanalytica
+image: dipto007/stockanalytica:latest
+workdir: /app
+command: ["npm", "start"]
+securityContext:
+  capabilities:
+    add:
+    - SYS_PTRACE 
+forward:
+  - 8080:80
