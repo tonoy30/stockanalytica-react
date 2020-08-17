@@ -1,0 +1,2 @@
+deploy:
+  - okteto build -t okteto.dev/stockanalytica:${OKTETO_GIT_COMMIT} .
