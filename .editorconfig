@@ -1,0 +1,11 @@
+root = true
+
+[*{.tsx, scss}]
+indent_size = 3
+indent_style = tab
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{json}]
+indent_style = tab
+indent_size = 2

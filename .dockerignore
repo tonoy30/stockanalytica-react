@@ -1,1 +1,8 @@
 node_modules/
+.editorconfig
+.gitignore
+yarn.lock
+README.md
+.prettierignore
+.vscode
+.idea
