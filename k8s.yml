@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: stockanalytica
-          image: okteto.dev/stockanalytica
+          image: dipto007/stockanalytica:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
