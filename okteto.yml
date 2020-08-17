@@ -5,6 +5,6 @@ command: ["npm", "start"]
 securityContext:
   capabilities:
     add:
-    - SYS_PTRACE 
+      - SYS_PTRACE
 forward:
   - 8080:80
