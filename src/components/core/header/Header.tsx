@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import "./Header.scss"
 const Header = () => {
 	return (
-		<div>
-			Header
+		<div className="header">
+			<p>
+				Header
+			</p>
 			<ul>
 				<li>
 					<Link to="/" replace>Home</Link>
