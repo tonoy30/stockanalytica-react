@@ -1,0 +1,18 @@
+sudo: required
+language: generic
+services:
+    - docker
+env:
+  global:
+    - CLOUDSDK_CORE_DISABLE_PROMPTS=1
+before_install:
+    - docker build -t dipto007/stockanalytica:latest .
+    - curl https://sdk.cloud.google.com | bash > /dev/null
+    - source $HOME/google-cloud-sdk/path.bash.inc
+    - gcloud components install kubectl
+deploy:
+  edge: true
+  provider: script
+  script: bash docker_push
+  on: 
+    branch: master
