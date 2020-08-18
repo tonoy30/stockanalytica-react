@@ -1,0 +1,14 @@
+.header {
+	display: flex;
+	ul {
+		display: flex;
+		li {
+			margin: 0px 10px;
+			list-style: none;
+			justify-content: flex-end;
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}
