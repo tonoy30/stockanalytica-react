@@ -47,6 +47,12 @@
 		"@types/react-router-dom": "^5.1.5",
 		"@types/redux-logger": "^3.0.8",
 		"redux-devtools-extension": "^2.13.8",
-		"redux-logger": "^3.0.6"
+		"redux-logger": "^3.0.6",
+		"husky": "^4.2.5"
+	},
+	"husky": {
+		"hooks": {
+			"pre-push": "yarn build"
+		}
 	}
 }
