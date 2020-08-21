@@ -8,8 +8,9 @@ import reducers from "./reducers";
 const initialState = {};
 const middleware = [thunk, logger];
 
-export const store = createStore(
-	reducers,
-	initialState,
-	composeWithDevTools(applyMiddleware(...middleware))
-);
+export const getStore = () =>
+	createStore(
+		reducers,
+		initialState,
+		composeWithDevTools(applyMiddleware(...middleware))
+	);

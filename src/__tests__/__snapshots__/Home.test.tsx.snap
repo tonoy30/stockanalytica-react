@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Test should render with given state from Redux store 1`] = `
+<div>
+  Home
+  <button
+    onClick={[Function]}
+  >
+    Dispatch
+  </button>
+</div>
+`;
