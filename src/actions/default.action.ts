@@ -1,9 +1,8 @@
 import { DEFAULT } from "./types";
-import { Dispatch } from "redux";
 
-export const defaultAction = () => (dispatch: Dispatch) => {
-	dispatch({
+export const defaultAction = () => {
+	return {
 		type: DEFAULT,
 		payload: "DEFAULT",
-	});
+	};
 };
