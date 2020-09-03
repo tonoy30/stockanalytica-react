@@ -57,12 +57,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "prod-build"
+      "pre-push": "yarn build && git add . && git commit -am 'prod build'"
     }
-  },
-  "prod-build": [
-    "yarn build",
-    "git add .",
-    "git commit -am 'prod build'"
-  ]
+  }
 }
