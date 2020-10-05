@@ -1,9 +1,8 @@
-import Layout from '@components/core/layout/Layout';
-import Home from '@components/home/Home';
-import Test from '@components/test/Test';
 import React, { FC } from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
-
+import Layout from '../components/core/layout/Layout';
+import Home from '../components/home/Home';
+import Test from '../components/test/Test';
 type Props = {};
 
 const Navigator: FC<Props> = () => {

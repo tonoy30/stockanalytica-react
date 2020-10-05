@@ -1,10 +1,9 @@
-import { CSSReset, ThemeProvider } from '@chakra-ui/core';
-import { Navigator } from '@navigator/Navigator';
+import { ColorModeProvider, ThemeProvider } from '@chakra-ui/core';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import './index.scss';
-import * as serviceWorker from './serviceWorker';
+import { Navigator } from './navigator/Navigator';
 import { getStore } from './store';
 import { newTheme } from './themes/breakpoints';
 
@@ -12,12 +11,11 @@ ReactDOM.render(
 	<React.StrictMode>
 		<Provider store={getStore()}>
 			<ThemeProvider theme={newTheme}>
-				<CSSReset />
-				<Navigator />
+				<ColorModeProvider>
+					<Navigator />
+				</ColorModeProvider>
 			</ThemeProvider>
 		</Provider>
 	</React.StrictMode>,
 	document.getElementById('root')
 );
-
-serviceWorker.unregister();
